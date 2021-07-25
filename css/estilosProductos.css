@@ -1,0 +1,398 @@
+*{
+    margin: 0;
+
+}
+html{
+    font-size: 100%px;
+    background-color: #8b0404;
+    width: 100%;
+}
+header h1{
+    background-color: #8b0404;
+    height: 50px;
+    text-align: center;
+}
+body{
+    background-color: #8b0404;
+}
+header{
+    background-color: #8b0404;
+    height: 90px;
+}
+header h2{
+    text-align: center;
+    height: 80px;
+}
+h1{
+    color: #f2e3e4
+}
+nav{
+    width: 100%;
+    height: 100px;
+    text-decoration: none;
+    background-color: #8b0404;
+}
+header a{
+    font-family: BatmanForeverAlternate;
+    text-align: left;
+    border: solid 1px;
+    text-decoration: none;
+    color: #f2e3e4;
+    width: 100%;
+}
+nav{
+    background-color: #8b0404;
+}
+nav ul {
+    list-style: none;
+    font-size:0;
+    width: 1360;
+    height: 100%;
+    text-align: center;
+    text-decoration: none;
+}
+nav li{
+    display: inline-block;
+    width: 50%;
+    position:relative;
+    font-size: 20px;
+    font-family: BatmanForeverAlternate;
+    background-color: #8b0404;
+    text-decoration: none;
+    height: 50px;
+    text-align: center;
+    border-right: outset 1px #f2e3e4;
+}
+.container-fluid{
+    background-color: #8b0404;
+}
+.navbar-collapse{
+    justify-content: center;
+    background-color: #8b0404;
+}
+a.navbar-brand{
+  width:0px;
+}
+
+.white{
+    color: #f2e3e4;
+}
+}
+.centrar{
+    text-align: center;
+
+}
+.batmanForever{
+    font-family: 'BatmanForeverAlternate';
+}
+
+.fondoProductos{
+    background-image: url(fondo2.jpg);
+}
+/*Comienzo de grid*/
+/*comienza sección general*/
+.grid {
+  display: grid;
+  grid-template-columns: 0.6fr 1.4fr;
+  grid-template-rows: 0.3fr 1.7fr 1fr 1fr 1fr 1fr;
+  gap: 10px 0px;
+  grid-auto-flow: row;
+  justify-items: center;
+  grid-column-gap: 5px;
+  width: 100%;
+  height: 1400px;
+  margin:0;
+  background-color: #8b0404;
+  grid-template-areas:
+    "hijoGrid hijoGrid2"
+    "hijoGrid hijoGrid2"
+    "hijoGrid hijoGrid2"
+    "hijoGrid hijoGrid2"
+    "hijoGrid hijoGrid2"
+    "hijoGrid hijoGrid2";
+}
+
+.hijoGrid2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+  gap: 5px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Producto1"
+    "Producto2"
+    "Producto3"
+    "Producto4"
+    "Producto5"
+    "Footer";
+  grid-area: hijoGrid2;
+}
+/*Producto numero 1*/
+.Producto1 {
+  display: grid;
+  grid-template-columns: 0.7fr 1.3fr 1fr;
+  grid-template-rows: 1.7fr 0.6fr 0.7fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  color: #f2e3e4;
+  background-image: linear-gradient(to right, #f2e3e4, #8b0404);
+  justify-items: start;
+  align-items: center;
+  grid-template-areas:
+    "img nombre nombre"
+    "img Precio ."
+    "img Comprar-agregar Comprar-agregar";
+  grid-area: Producto1;
+}
+
+.img { grid-area: img; }
+
+.nombre { grid-area: nombre;
+          font-family: BatmanForeverAlternate;
+          font-size: 20px;}
+
+.Precio { grid-area: Precio;
+          font-family: BatmanForeverAlternate;
+          font-size: 20px;  }
+
+.Comprar-agregar { grid-area: Comprar-agregar; }
+/*Producto Número 2*/
+
+.Producto2 {
+  display: grid;
+  grid-template-columns: 0.7fr 1.3fr 1fr;
+  grid-template-rows: 1.7fr 0.6fr 0.7fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  color: #f2e3e4;
+  background-image: linear-gradient(to right, #f2e3e4, #8b0404);
+  justify-items: start;
+  align-items: center;
+  grid-template-areas:
+    "img nombre nombre"
+    "img Precio ."
+    "img Comprar-agregar Comprar-agregar";
+  grid-area: Producto2;
+}
+
+.img { grid-area: img; }
+
+.nombre { grid-area: nombre;
+          font-family: BatmanForeverAlternate;
+          font-size: 20px; }
+
+.Precio { grid-area: Precio;
+          font-family: BatmanForeverAlternate;
+          font-size: 20px;  }
+
+.Comprar-agregar { grid-area: Comprar-agregar; }
+/*Producto número 3*/
+
+.Producto3 {
+  display: grid;
+  grid-template-columns: 0.7fr 1.3fr 1fr;
+  grid-template-rows: 1.7fr 0.6fr 0.7fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  background-image: linear-gradient(to right, #f2e3e4, #8b0404);
+  justify-items: start;
+  color: #f2e3e4;
+  align-items: center;
+  grid-template-areas:
+    "img nombre nombre"
+    "img Precio ."
+    "img Comprar-agregar Comprar-agregar";
+  grid-area: Producto3; }
+
+/*Producto Número 4*/
+
+.Producto4 {
+ display: grid;
+  grid-template-columns: 0.7fr 1.3fr 1fr;
+  grid-template-rows: 1.7fr 0.6fr 0.7fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  background-image: linear-gradient(to right, #f2e3e4, #8b0404);
+  justify-items: start;
+  color: #f2e3e4;
+  align-items: center;
+  grid-template-areas:
+    "img nombre nombre"
+    "img Precio ."
+    "img Comprar-agregar Comprar-agregar";
+  grid-area: Producto4; }
+
+/*Producto Número 5*/
+
+.Producto5 { 
+  display: grid;
+  grid-template-columns: 0.7fr 1.3fr 1fr;
+  grid-template-rows: 1.7fr 0.6fr 0.7fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  color: #f2e3e4;
+  background-image: linear-gradient(to right, #f2e3e4, #8b0404);
+  justify-items: start;
+  align-items: center;
+  grid-template-areas:
+    "img nombre nombre"
+    "img Precio ."
+    "img Comprar-agregar Comprar-agregar";
+  grid-area: Producto5; }
+
+/*INICIO FOOTER*/
+.Footer { grid-area:Footer; }
+
+/*COMIENZO CATEGORÍAS*/
+.hijoGrid {
+  display: grid; 
+  grid-template-columns: 1fr; 
+  grid-template-rows: 0.3fr 1.7fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "Publicidad"
+    "Categorías"; 
+  grid-area: hijoGrid; 
+}
+.Publicidad { grid-area: Publicidad;
+ }
+ div #Animacion a{
+position: relative;
+overflow: hidden;
+display: inline-block;
+text-decoration: none;
+color: grey;
+}
+
+div #Animacion a:after {
+content: "";
+position: absolute;
+bottom: 0;
+left: -100%;
+width: 100%;
+height: 2px;
+transition: left .8s;
+}
+div #Animacion a:hover:after {
+left: 0;
+}
+.Categorías {
+  display: grid; 
+  grid-template-columns: 1fr; 
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
+  gap: 0px 0px;
+  background-color: #001413;
+  justify-items: start;
+  align-items: center; 
+  grid-template-areas: 
+    "Categoria"
+    "Teclados"
+    "Gabinetes"
+    "Mouse"
+    "Monitores"
+    "Camaras"
+    "Notebooks"
+    "Procesadores"
+    "Memorias-RAM"
+    "Tarjetas-de-video"
+    "Auriculares"
+    "Motherboards"
+    "Ventiladores"
+    "Alfombrillas"; 
+  grid-area: Categorías;
+}
+
+.Categoria { grid-area: Categoria;
+           font-size: 50px;
+           font-family: BatmanForeverAlternate;
+           color: #f2e3e4;}
+}
+.Teclados { grid-area: Teclados;
+          font-size: 20px;
+          font-family: BatmanForeverAlternate;
+         }
+.Teclados a{
+    text-decoration: none;
+    color: grey;
+    font-family: BatmanForeverAlternate;
+    font-size: 20px;
+
+}
+.Gabinetes { grid-area: Gabinetes;
+          font-size: 20px;
+          font-family: BatmanForeverAlternate; }
+.Gabinetes a{
+    text-decoration: none;
+    color: grey;}          
+.Mouse { grid-area: Mouse;
+          font-size: 20px;
+          font-family: BatmanForeverAlternate; }
+.Mouse a{
+    text-decoration: none;
+    color: grey;}
+.Monitores { grid-area: Monitores;
+          font-size: 20px;
+          font-family: BatmanForeverAlternate; }
+.Monitores a{
+    text-decoration: none;
+    color: grey;}
+.Camaras { grid-area: Camaras;
+          font-size: 20px;
+          font-family: BatmanForeverAlternate; }
+.Camaras a{
+    text-decoration: none;
+    color: grey;}
+.Notebooks { grid-area: Notebooks;
+          font-size: 20px;
+          font-family: BatmanForeverAlternate; }
+.Notebooks a{
+    text-decoration: none;
+    color: grey;}
+.Procesadores { grid-area: Procesadores;
+          font-size: 20px;
+          font-family: BatmanForeverAlternate; }
+.Procesadores a{
+    text-decoration: none;
+    color: grey;}
+.Memorias-RAM { grid-area: Memorias-RAM;
+          font-size: 20px;
+          font-family: BatmanForeverAlternate; }
+.Memorias-RAM a{
+    text-decoration: none;
+    color: grey;}
+.Tarjetas-de-video { grid-area: Tarjetas-de-video;
+          font-size: 20px;
+          font-family: BatmanForeverAlternate; }
+.Tarjetas-de-video a{
+    text-decoration: none;
+    color: grey;}
+.Auriculares { grid-area: Auriculares;
+          font-size: 20px;
+          font-family: BatmanForeverAlternate; }
+.Auriculares a{
+    text-decoration: none;
+    color: grey;}
+.Motherboards { grid-area: Motherboards;
+          font-size: 20px;
+          font-family: BatmanForeverAlternate; }
+.Motherboards a{
+    text-decoration: none;
+    color: grey;}
+.Ventiladores { grid-area: Ventiladores;
+          font-size: 20px;
+          font-family: BatmanForeverAlternate; }
+.Ventiladores a{
+    text-decoration: none;
+    color: grey;}
+.Alfombrillas { grid-area: Alfombrillas;
+          font-size: 20px;
+          font-family: BatmanForeverAlternate; }
+.Alfombrillas a{
+    text-decoration: none;
+    color: grey;
+}
+.carousel-inner img {
+    width: 100%;
+    height: 300px;
+}
+
